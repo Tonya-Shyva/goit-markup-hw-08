@@ -1,0 +1,27 @@
+.example-thumb {
+  position: relative;
+}
+
+.example-thumb__img {
+  height: 294px;
+}
+
+.example-thumb__description {
+  position: absolute;
+  display: flex;
+
+  width: inherit;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.example-thumb__title {
+  text-align: center;
+  color: #ffffff;
+}

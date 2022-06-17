@@ -1,0 +1,32 @@
+.team-section {
+  background-color: #f5f4fa;
+  letter-spacing: 0.03em;
+}
+
+.member-card {
+  width: 270px;
+  //   width: calc((100%-120px) / 4);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-background-color;
+}
+
+.member-card__name,
+.member-card__position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.member-card__name {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.member-card__position {
+  color: #757575;
+  margin-bottom: 16px;
+}

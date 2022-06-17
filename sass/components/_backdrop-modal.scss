@@ -1,0 +1,72 @@
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity $transition-settings, visibility $transition-settings;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity $transition-settings;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: rgba(255, 255, 255, 1);
+
+  opacity: 1;
+  transition: transform $transition-settings, opacity $transition-settings;
+
+  .is-hidden & {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform $transition-settings, opacity $transition-settings;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  cursor: pointer;
+  background-color: $primary-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-close__icon {
+  display: block;
+  margin: 0;
+
+  transition: fill $transition-settings;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    fill: #2196f3;
+  }
+}
