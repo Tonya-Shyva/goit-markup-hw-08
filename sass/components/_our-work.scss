@@ -1,3 +1,9 @@
+.our-work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .example-thumb {
   position: relative;
 }
@@ -10,7 +16,7 @@
   position: absolute;
   display: flex;
 
-  width: inherit;
+  width: 370px;
   height: 70px;
   bottom: 0;
   left: 0;

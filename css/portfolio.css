@@ -43,20 +43,40 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media screen and (width: 768px) {
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .list__item:not(:last-child) {
@@ -64,9 +84,6 @@ h3 {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,9 +92,6 @@ h3 {
 }
 
 .page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -148,9 +162,6 @@ h3 {
 }
 
 .connection-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-width: 142px;
   height: 16px;
   margin: 0;
@@ -165,9 +176,6 @@ h3 {
 }
 
 .connection-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   color: #757575;
@@ -226,9 +234,6 @@ h3 {
 }
 
 .filter-list__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 38px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -279,7 +284,7 @@ h3 {
 
 .project-thumb {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .project-thumb__image {
@@ -364,12 +369,6 @@ h3 {
   background-color: #2f303a;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer__address {
   width: 231px;
   margin-top: 20px;
@@ -413,6 +412,9 @@ h3 {
 }
 
 .soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 206px;
   height: 44px;
   margin-left: auto;

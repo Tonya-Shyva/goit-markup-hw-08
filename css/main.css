@@ -44,20 +44,40 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media screen and (width: 768px) {
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .list__item:not(:last-child) {
@@ -65,9 +85,6 @@ h3 {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -76,9 +93,6 @@ h3 {
 }
 
 .page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -149,9 +163,6 @@ h3 {
 }
 
 .connection-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-width: 142px;
   height: 16px;
   margin: 0;
@@ -166,9 +177,6 @@ h3 {
 }
 
 .connection-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   color: #757575;
@@ -332,6 +340,12 @@ h3 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
+}
+
 .example-thumb {
   position: relative;
 }
@@ -345,7 +359,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: inherit;
+  width: 370px;
   height: 70px;
   bottom: 0;
   left: 0;
@@ -497,12 +511,6 @@ h3 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: #2f303a;
-}
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer__address {
