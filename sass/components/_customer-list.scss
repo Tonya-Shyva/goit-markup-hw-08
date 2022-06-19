@@ -1,7 +1,22 @@
-.list__customer-item {
+.customer-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (max-width: 767px) {
+    column-count: 2;
+  }
+
+  @media screen and (max-width: 1199px) {
+    column-count: 3;
+  }
+}
+
+.customer-list__customer-item {
   display: flex;
   width: 170px;
   height: 92px;
+  margin: 15px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
