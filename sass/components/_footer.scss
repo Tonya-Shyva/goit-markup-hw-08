@@ -9,12 +9,20 @@
   background-color: #2f303a;
 }
 
-// .footer-container {
-//   // display: flex;
-// }
+.footer-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer__contacts {
+  text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 .footer__address {
-  width: 231px;
+  // width: 231px;
   margin-top: 20px;
 
   font-style: inherit;
@@ -22,7 +30,10 @@
 
 .map-address {
   color: #ffffff;
-  text-align: left;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .contact-link {
@@ -39,22 +50,32 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
-
 .footer__join {
-  width: 206px;
-  margin-left: 70px;
-  margin-right: 93px;
+  // width: 206px;
+  margin: 60px 0px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0px 93px 0px 79px;
+  }
 }
 
 .footer__subtitle {
-  min-width: 144px;
   margin-bottom: 20px;
 
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 144px;
+    text-align: left;
+  }
 }
