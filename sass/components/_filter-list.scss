@@ -2,18 +2,22 @@
   min-width: 611px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 43px;
+  margin-bottom: 30px;
 
   &__item:not(:last-child) {
     margin-right: 8.12px;
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter-list__button {
-  // display: flex;
   height: 38px;
-  justify-content: center;
-  align-items: center;
 
   padding: 0;
 
@@ -36,5 +40,11 @@
     background-color: $accent-color;
     color: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
