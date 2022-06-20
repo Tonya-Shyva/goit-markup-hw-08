@@ -1,18 +1,33 @@
 .filter-list {
-  min-width: 611px;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: left;
   align-items: center;
-  margin-bottom: 30px;
 
   &__item:not(:last-child) {
-    margin-right: 8.12px;
+    margin-right: 8px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    min-width: 611px;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 50px;
+    }
   }
 }
 
