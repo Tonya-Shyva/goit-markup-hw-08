@@ -308,7 +308,7 @@ h3 {
   margin: -1px;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .feature-section {
     padding-bottom: 0px;
   }
@@ -316,7 +316,6 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .feature-list {
-    width: 750px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -328,26 +327,25 @@ h3 {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .feature-list {
-    width: 1170px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-column-count: 4;
-       -moz-column-count: 4;
-            column-count: 4;
   }
 }
 
+.feature-list__item {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .feature-list__item {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .feature-list__item {
-    width: calc((100% - 150px) / 4);
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -399,6 +397,14 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .our-work__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .example-thumb {
   position: relative;
 }
@@ -436,13 +442,44 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .member-card {
-  width: 270px;
+  width: 100%;
   padding-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .member-card {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .member-card {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .member-card__name,
@@ -529,6 +566,9 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .customer-list {

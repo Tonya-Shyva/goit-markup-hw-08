@@ -3,6 +3,11 @@
     display: none;
   }
 }
+.our-work__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .example-thumb {
   position: relative;
