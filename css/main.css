@@ -346,7 +346,7 @@ h3 {
     margin: 15px;
   }
   .feature-list__item:not(:last-child) {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -645,11 +645,30 @@ h3 {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -697,6 +716,12 @@ h3 {
 
 .footer__join {
   margin: 60px 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer__join {
+    margin: 0px;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__join {
@@ -766,9 +791,15 @@ h3 {
 .subscribe {
   width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     width: 570px;
+    margin-top: 0px;
   }
 }
 
@@ -784,7 +815,7 @@ h3 {
 }
 
 .subscribe__input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;

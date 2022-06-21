@@ -1,8 +1,13 @@
 .subscribe {
   width: 450px;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 570px;
+    margin-top: 0px;
   }
 }
 
@@ -14,7 +19,7 @@
 }
 
 .subscribe__input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
