@@ -6,6 +6,7 @@
 }
 
 .form-field__input {
+  width: 100%;
   height: 40px;
   padding: 11px 12px 11px 40px;
   cursor: pointer;
@@ -23,10 +24,11 @@
 
 .form-field__textarea {
   resize: none;
-  color: rgba(117, 117, 117, 0.5);
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
 
+  color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;

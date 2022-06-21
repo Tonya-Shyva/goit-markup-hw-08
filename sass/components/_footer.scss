@@ -7,6 +7,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: #2f303a;
+  text-align: center;
+
+  // @media screen and (min-width: 768px) {
+  //   // text-align: left;
+  // }
 }
 
 .footer-container {
