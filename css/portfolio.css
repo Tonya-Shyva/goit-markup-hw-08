@@ -127,6 +127,28 @@ h3 {
   margin-right: 93px;
 }
 
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-btn .icon-cross {
+  display: none;
+}
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+.menu-btn:hover, .menu-btn:focus {
+  fill: #2196f3;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;

@@ -19,3 +19,27 @@
 .page-header__logo {
   margin-right: 93px;
 }
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}

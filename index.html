@@ -24,6 +24,7 @@
   </head>
   <body>
     <script src="./js/mobile-menu.js"></script>
+    
     <!-- Верхняя линия -->
     <header class="page-header container">
       <nav class="page-header__nav">
@@ -31,6 +32,12 @@
         <a href="./index.html" class="logo page-header__logo" lang="en">
           Web<span class="logo__part-end logo__part-end--black">Studio</span>
         </a>
+        <button type="button" class="menu-btn is-open" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
 
         <!--Navigation-->
         <ul class="nav-list list">
