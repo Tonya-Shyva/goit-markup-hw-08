@@ -6,6 +6,10 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav-list__link {
@@ -28,15 +32,17 @@
 
   &::after {
     content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
 
-    width: 100%;
-    height: 4px;
-    transform: translateY(32px);
+      width: 100%;
+      height: 4px;
+      transform: translateY(32px);
 
-    border-radius: 2px;
-    background-color: $accent-color;
+      border-radius: 2px;
+      background-color: $accent-color;
+    }
   }
 }

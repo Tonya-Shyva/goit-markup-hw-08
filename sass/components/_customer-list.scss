@@ -42,3 +42,8 @@
   align-items: center;
   border: none;
 }
+
+.customer-list__customer-item:hover .link__icon--grey,
+.customer-list__customer-item:focus .link__icon--grey {
+  fill: $accent-color;
+}

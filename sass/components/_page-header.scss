@@ -1,13 +1,19 @@
 .page-header {
-  // display: flex;
   align-items: center;
   min-height: 80px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .page-header__nav {
-  // display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .page-header__logo {

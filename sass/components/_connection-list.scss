@@ -1,23 +1,36 @@
 .connection-list {
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .connection-list__item {
-  // display: flex;
   min-width: 142px;
   height: 16px;
   margin: 0;
   padding: 0;
   align-items: center;
-  margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .connection-list__link {
-  // display: flex;
+  display: flex;
   margin: 0;
   padding: 0;
   color: #757575;
