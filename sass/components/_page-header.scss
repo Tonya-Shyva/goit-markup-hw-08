@@ -1,45 +1,79 @@
 .page-header {
-  align-items: center;
-  min-height: 80px;
-  border-bottom: 1px solid #ececec;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+  position: relative;
 }
 
 .page-header__nav {
+  display: flex;
+
   align-items: center;
+  min-height: 60px;
+
+  border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    min-height: 80px;
   }
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .menu-btn {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  display: none;
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-  & .icon-cross {
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+
+    & .icon-cross {
+      display: none;
+    }
+
+    &.is-open .icon-cross {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+}
+
+.mobile-menu-thumb {
+  @media screen and (min-width: 0px) and (max-width: 767px) {
     display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    // transform: translateY(-60px);
+
+    background-color: $primary-background-color;
+
+    &.is-open {
+      display: block;
+    }
   }
 
-  &.is-open .icon-cross {
-    display: block;
-  }
-
-  &.is-open .icon-menu {
-    display: none;
-  }
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
