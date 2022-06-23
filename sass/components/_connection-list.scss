@@ -1,9 +1,5 @@
 .connection-list {
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
@@ -15,7 +11,7 @@
   padding: 0;
   align-items: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-bottom: 10px;
 
     &:last-child {
@@ -23,7 +19,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 50px;
 
     &:last-child {
@@ -38,8 +34,8 @@
   padding: 0;
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   align-items: center;
@@ -49,10 +45,15 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .connection-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   padding: 0;
   fill: #757575;
 
@@ -61,5 +62,18 @@
   .connection-list__link:hover &,
   .connection-list__link:focus & {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    .icon-envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    .icon-smartphone {
+      width: 10px;
+      height: 16px;
+    }
+    margin-right: 10px;
   }
 }

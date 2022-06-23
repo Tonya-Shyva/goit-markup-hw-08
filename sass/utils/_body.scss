@@ -4,4 +4,8 @@ body {
   font-weight: 400;
   color: $primary-text-color;
   background-color: $primary-background-color;
+
+  // &.modal-open {
+  //   overflow: hidden;
+  // }
 }

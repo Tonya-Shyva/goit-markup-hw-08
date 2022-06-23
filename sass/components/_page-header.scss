@@ -23,10 +23,9 @@
     margin-right: 93px;
   }
 }
-
 .menu-btn {
   display: none;
-  @media screen and (min-width: 0px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     margin: 0;
     margin-left: auto;
@@ -55,7 +54,7 @@
 }
 
 .mobile-menu-thumb {
-  @media screen and (min-width: 0px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
 
@@ -75,5 +74,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }

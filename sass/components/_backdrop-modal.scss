@@ -18,17 +18,15 @@
 
   opacity: 1;
   transition: opacity $transition-settings;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    padding: 93px 15px 94px 15px;
+    overflow-y: scroll;
+  }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-
-  min-width: 528px;
-  min-height: 581px;
-
+  position: relative;
   background-color: rgba(255, 255, 255, 1);
 
   opacity: 1;
@@ -38,6 +36,23 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: transform $transition-settings, opacity $transition-settings;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -57,6 +72,10 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  // @media screen and (min-width: 1200px) {
+
+  // }
 }
 
 .btn-close__icon {
