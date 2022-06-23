@@ -1,5 +1,5 @@
 .nav-list {
-  min-width: 294px;
+  width: 294px;
   justify-content: space-between;
 
   font-weight: 500;
@@ -9,7 +9,6 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    // margin-right: auto;
   }
 }
 

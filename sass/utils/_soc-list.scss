@@ -29,6 +29,7 @@
   border: none;
   justify-content: center;
   align-items: center;
+  outline: transparent;
 
   transition: background-color $transition-settings;
 
@@ -36,11 +37,19 @@
   &:focus {
     background-color: $accent-color;
   }
+
+  &--grey {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .soc-link__icon {
   width: 20px;
   height: 20px;
+
+  &--white {
+    fill: #ffffff;
+  }
 }
 
 .link__icon--grey {
