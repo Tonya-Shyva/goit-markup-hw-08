@@ -66,11 +66,14 @@
 
 .form-field__icon {
   position: absolute;
-  bottom: 0;
+  display: inline-block;
+
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
+
   margin-left: 12px;
-  display: inline-block;
+
   width: 18px;
   height: 18px;
   transition: fill $transition-settings;

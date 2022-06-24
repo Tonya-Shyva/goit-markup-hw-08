@@ -1,18 +1,27 @@
-.nav-list {
+.site-nav-list {
+  display: flex;
+
   width: 294px;
   justify-content: space-between;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-size: 40px;
+  line-height: 1.18;
+
+  @media screen and (max-width: 767px) {
+    min-height: 208px;
+
+    flex-direction: column;
+    flex-grow: 2;
+  }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
+    // display: flex;
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 
-.nav-list__link {
+.site-nav-list__link {
   color: $primary-text-color;
   transition: $transition-settings;
 
@@ -22,7 +31,7 @@
   }
 }
 
-.nav-list__link--current {
+.site-nav-list__link--current {
   color: $accent-color;
   position: relative;
 

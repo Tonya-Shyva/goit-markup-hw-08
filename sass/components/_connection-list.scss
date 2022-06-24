@@ -1,6 +1,12 @@
 .connection-list {
-  @media screen and (min-width: $desktop) {
-    display: flex;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+
+    margin-top: 302px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: block;
   }
 }
 
@@ -30,20 +36,35 @@
 
 .connection-list__link {
   display: flex;
+
   margin: 0;
   padding: 0;
+
   color: #757575;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+  font-size: 24px;
+
   text-decoration: none;
+
   align-items: center;
   transition: color $transition-settings;
 
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    &.tel-link {
+      margin-bottom: 32px;
+      font-size: 34px;
+      line-height: 1.18;
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.17;
   }
 
   @media screen and (min-width: $desktop) {
@@ -53,6 +74,9 @@
 }
 
 .connection-list__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   margin-right: 8px;
   padding: 0;
   fill: #757575;

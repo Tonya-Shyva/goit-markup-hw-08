@@ -23,41 +23,75 @@
   </head>
   <body>
     <!-- Верхняя линия -->
-    <header class="page-header container">
-      <nav class="page-header__nav">
-        <!--Logo-->
-        <a href="./index.html" class="logo page-header__logo" lang="en">
-          Web<span class="logo__part-end logo__part-end--black">Studio</span>
-        </a>
-
-        <!--Navigation-->
-        <ul class="nav-list list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Студия</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--current" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <ul class="connection-list list">
-        <li class="connection-list__item">
-          <a class="connection-list__link" lang="en" href="mailto:info@devstudio.com"
-            ><svg class="connection-list__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
+    <header class="page-header">
+      <div class="page-header__container container">
+        <nav class="page-header__nav">
+          <!-------Logo------------->
+          <a href="./index.html" class="logo page-header__logo" lang="en">
+            Web<span class="logo__part-end logo__part-end--black">Studio</span>
+          </a>
+          <!-- -----------Mobile-menu-button-------------- -->
+          <button
+            type="button"
+            class="menu-btn is-open"
+            aria-expanded="false"
+            aria-controls="mobile_menu_thumb"
+            data-menu-button
           >
-        </li>
-        <li class="connection-list__item">
-          <a class="connection-list__link" href="tel:+380961111111"
-            ><svg class="connection-list__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use></svg
-            >+380961111111</a
-          >
-        </li>
-      </ul>
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!---------------Navigation-menu------------>
+          <div class="mobile-menu-thumb is-open" id="mobile_menu_thumb" data-menu>
+            <ul class="site-nav-list list">
+              <li class="site-nav-list__item">
+                <a class="site-nav-list__link" href="index.html">Студия</a>
+              </li>
+              <li class="site-nav-list__item">
+                <a class="site-nav-list__link site-nav-list__link--current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav-list__item">
+                <a class="site-nav-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="connection-list list">
+              <li class="connection-list__item">
+                <a class="connection-list__link" lang="en" href="mailto:info@devstudio.com"
+                  ><svg class="connection-list__icon icon-envelope" width="14" height="10">
+                    <use href="./images/icons.svg#icon-envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="connection-list__item">
+                <a class="connection-list__link tel-link" href="tel:+380961111111"
+                  ><svg class="connection-list__icon icon-smartphone" width="10" height="14">
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg
+                  >+380961111111</a
+                >
+              </li>
+            </ul>
+            <ul class="socwebs-list list">
+              <li class="socwebs-list__item">
+                <a href="" class="socwebs-list__link">Instagram</a>
+              </li>
+              <li class="socwebs-list__item">
+                <a href="" class="socwebs-list__link">Twitter</a>
+              </li>
+              <li class="socwebs-list__item">
+                <a href="" class="socwebs-list__link">Facebook</a>
+              </li>
+              <li class="socwebs-list__item">
+                <a href="" class="socwebs-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -297,7 +331,7 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="footer-container container">
-        <div>
+        <div class="footer__contacts">
           <!--Logo-->
           <a href="./index.html" class="logo" lang="en">
             Web<span class="logo__part-end logo__part-end--white">Studio</span>

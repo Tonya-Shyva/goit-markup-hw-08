@@ -1,14 +1,14 @@
 .page-header {
+  border-bottom: 1px solid #ececec;
   position: relative;
 }
 
 .page-header__nav {
+  width: calc(100% - 30px);
   display: flex;
-
   align-items: center;
+  justify-content: space-between;
   min-height: 60px;
-
-  border-bottom: 1px solid #ececec;
 
   @media screen and (min-width: 768px) {
     min-height: 80px;
@@ -26,13 +26,15 @@
 .menu-btn {
   display: none;
   @media screen and (max-width: 767px) {
+    z-index: 999;
     display: flex;
     margin: 0;
-    margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    transition: fill $transition-settings;
 
     &:hover,
     &:focus {
@@ -41,6 +43,11 @@
 
     & .icon-cross {
       display: none;
+
+      &:hover .site-nav-list__link--current,
+      &:focus .site-nav-list__link--current {
+        color: $primary-text-color;
+      }
     }
 
     &.is-open .icon-cross {
@@ -54,20 +61,32 @@
 }
 
 .mobile-menu-thumb {
+  font-weight: 500;
+  letter-spacing: 0.02em;
   @media screen and (max-width: 767px) {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 998;
+
     position: absolute;
 
-    top: 100%;
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 796px;
-    // transform: translateY(-60px);
 
     background-color: $primary-background-color;
 
+    transition: opacity $transition-settings, visibility $transition-settings;
+
     &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: fill;
+
       display: block;
+      padding: 48px 40px;
     }
   }
 
