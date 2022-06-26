@@ -1,4 +1,6 @@
 .customer-list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   margin: -15px;

@@ -1,4 +1,5 @@
 .site-nav-list {
+  @extend %list;
   display: flex;
 
   width: 294px;

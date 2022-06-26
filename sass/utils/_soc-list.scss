@@ -1,4 +1,6 @@
 .soc-list {
+  @extend %list;
+
   display: flex;
 
   width: 206px;
