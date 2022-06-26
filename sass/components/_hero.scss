@@ -1,5 +1,6 @@
 .hero {
   background-color: #c4c4c4;
+  text-align: center;
 }
 
 .hero__container {
@@ -12,6 +13,7 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0;
   }
 }
 
@@ -49,6 +51,8 @@
   @media screen and (min-width: 1200px) {
     width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-img/hero-desktop.jpg');
     background-size: 1600px 600px;
@@ -64,6 +68,7 @@
   width: 360px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
   color: #ffffff;
   font-weight: 900;
