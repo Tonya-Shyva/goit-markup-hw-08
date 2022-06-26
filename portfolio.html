@@ -33,7 +33,7 @@
           <!-- -----------Mobile-menu-button-------------- -->
           <button
             type="button"
-            class="menu-btn is-open"
+            class="menu-btn"
             aria-expanded="false"
             aria-controls="mobile_menu_thumb"
             data-menu-button
@@ -45,7 +45,7 @@
           </button>
 
           <!---------------Navigation-menu------------>
-          <div class="mobile-menu-thumb is-open" id="mobile_menu_thumb" data-menu>
+          <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu>
             <ul class="site-nav-list list">
               <li class="site-nav-list__item">
                 <a class="site-nav-list__link" href="index.html">Студия</a>
@@ -139,12 +139,34 @@
             <li class="projects-list__item first">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project1.jpg"
-                    alt="Открытый ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-first-tablet.webp     354w,
+                        ./images/projects-desctop/project-first-desktop.webp   370w,
+                        ./images/projects-mobile/project-first-mobile.webp     450w,
+                        ./images/projects-tablet/project-first-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-first-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-first-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-first-tablet.jpg     354w,
+                        ./images/projects-desctop/project-first-desktop.jpg   370w,
+                        ./images/projects-mobile/project-first-mobile.jpg     450w,
+                        ./images/projects-tablet/project-first-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-first-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-first-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-first-tablet.jpg"
+                      alt="Технокряк"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -163,12 +185,34 @@
             <li class="projects-list__item second">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project2.jpg"
-                    alt="Постер"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-second-tablet.webp     354w,
+                        ./images/projects-desctop/project-second-desktop.webp   370w,
+                        ./images/projects-mobile/project-second-mobile.webp     450w,
+                        ./images/projects-tablet/project-second-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-second-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-second-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-second-tablet.jpg     354w,
+                        ./images/projects-desctop/project-second-desktop.jpg   370w,
+                        ./images/projects-mobile/project-second-mobile.jpg     450w,
+                        ./images/projects-tablet/project-second-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-second-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-second-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-second-tablet.jpg"
+                      alt="Постер"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -185,12 +229,34 @@
             <li class="projects-list__item third">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project3.jpg"
-                    alt="Логотип ресторана Сифуд"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-third-tablet.webp     354w,
+                        ./images/projects-desctop/project-third-desktop.webp   370w,
+                        ./images/projects-mobile/project-third-mobile.webp     450w,
+                        ./images/projects-tablet/project-third-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-third-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-third-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-third-tablet.jpg     354w,
+                        ./images/projects-desctop/project-third-desktop.jpg   370w,
+                        ./images/projects-mobile/project-third-mobile.jpg     450w,
+                        ./images/projects-tablet/project-third-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-third-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-third-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-third-tablet.jpg"
+                      alt="Ресторан Сифуд"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -205,12 +271,34 @@
             <li class="projects-list__item fourth">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project4.jpg"
-                    alt="Наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-fourth-tablet.webp     354w,
+                        ./images/projects-desctop/project-fourth-desktop.webp   370w,
+                        ./images/projects-mobile/project-fourth-mobile.webp     450w,
+                        ./images/projects-tablet/project-fourth-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-fourth-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-fourth-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-fourth-tablet.jpg     354w,
+                        ./images/projects-desctop/project-fourth-desktop.jpg   370w,
+                        ./images/projects-mobile/project-fourth-mobile.jpg     450w,
+                        ./images/projects-tablet/project-fourth-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-fourth-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-fourth-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-fourth-tablet.jpg"
+                      alt="Проект Прайм"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -225,12 +313,34 @@
             <li class="projects-list__item fifth">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project5.jpg"
-                    alt="Коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-fifth-tablet.webp     354w,
+                        ./images/projects-desctop/project-fifth-desktop.webp   370w,
+                        ./images/projects-mobile/project-fifth-mobile.webp     450w,
+                        ./images/projects-tablet/project-fifth-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-fifth-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-fifth-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-fifth-tablet.jpg     354w,
+                        ./images/projects-desctop/project-fifth-desktop.jpg   370w,
+                        ./images/projects-mobile/project-fifth-mobile.jpg     450w,
+                        ./images/projects-tablet/project-fifth-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-fifth-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-fifth-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-fifth-tablet.jpg"
+                      alt="Проект Коробки"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -245,12 +355,34 @@
             <li class="projects-list__item sixth">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project6.jpg"
-                    alt="Монитор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-sixth-tablet.webp     354w,
+                        ./images/projects-desctop/project-sixth-desktop.webp   370w,
+                        ./images/projects-mobile/project-sixth-mobile.webp     450w,
+                        ./images/projects-tablet/project-sixth-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-sixth-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-sixth-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-sixth-tablet.jpg     354w,
+                        ./images/projects-desctop/project-sixth-desktop.jpg   370w,
+                        ./images/projects-mobile/project-sixth-mobile.jpg     450w,
+                        ./images/projects-tablet/project-sixth-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-sixth-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-sixth-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-sixth-tablet.jpg"
+                      alt="Сайт Вдохновенье без границ"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -264,12 +396,34 @@
             <li class="projects-list__item seventh">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project7.jpg"
-                    alt="Открытый журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-seventh-tablet.webp     354w,
+                        ./images/projects-desctop/project-seventh-desktop.webp   370w,
+                        ./images/projects-mobile/project-seventh-mobile.webp     450w,
+                        ./images/projects-tablet/project-seventh-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-seventh-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-seventh-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-seventh-tablet.jpg     354w,
+                        ./images/projects-desctop/project-seventh-desktop.jpg   370w,
+                        ./images/projects-mobile/project-seventh-mobile.jpg     450w,
+                        ./images/projects-tablet/project-seventh-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-seventh-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-seventh-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-seventh-tablet.jpg"
+                      alt="Дизайн Издания Лимитед Эдишн"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -286,12 +440,34 @@
             <li class="projects-list__item eigth">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project8.jpg"
-                    alt="Бирка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-eighth-tablet.webp     354w,
+                        ./images/projects-desctop/project-eighth-desktop.webp   370w,
+                        ./images/projects-mobile/project-eighth-mobile.webp     450w,
+                        ./images/projects-tablet/project-eighth-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-eighth-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-eighth-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-eighth-tablet.jpg     354w,
+                        ./images/projects-desctop/project-eighth-desktop.jpg   370w,
+                        ./images/projects-mobile/project-eighth-mobile.jpg     450w,
+                        ./images/projects-tablet/project-eighth-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-eighth-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-eighth-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-eighth-tablet.jpg"
+                      alt="Проект ЛАБ"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
@@ -306,12 +482,34 @@
             <li class="projects-list__item ninth">
               <a href="" class="project-card">
                 <div class="project-thumb">
-                  <img
-                    class="project-thumb__image"
-                    src="./images/project9.jpg"
-                    alt="Открытый ноутбук со стартовой страницей приложения"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-tablet/project-ninth-tablet.webp     354w,
+                        ./images/projects-desctop/project-ninth-desktop.webp   370w,
+                        ./images/projects-mobile/project-ninth-mobile.webp     450w,
+                        ./images/projects-tablet/project-ninth-tablet2x.webp   708w,
+                        ./images/projects-desctop/project-ninth-desktop2x.webp 740w,
+                        ./images/projects-mobile/project-ninth-mobile2x.webp   900w
+                      "
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects-tablet/project-ninth-tablet.jpg     354w,
+                        ./images/projects-desctop/project-ninth-desktop.jpg   370w,
+                        ./images/projects-mobile/project-ninth-mobile.jpg     450w,
+                        ./images/projects-tablet/project-ninth-tablet2x.jpg   708w,
+                        ./images/projects-desctop/project-ninth-desktop2x.jpg 740w,
+                        ./images/projects-mobile/project-ninth-mobile2x.jpg   900w
+                      "
+                      class="member"
+                      src="./images/projects-tablet/project-ninth-tablet.jpg"
+                      alt="Приложение для бизнеса"
+                      sizes="(min-width: 1400px) 25vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="project-thumb__overlay">
                     <p class="overlay__text"></p>
                   </div>
