@@ -1223,7 +1223,7 @@ h3 {
 }
 
 .order-form {
-  width: inherit;
+  width: 100%;
   padding: 40px;
 }
 
