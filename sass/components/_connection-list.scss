@@ -78,6 +78,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   margin-right: 8px;
   padding: 0;
   fill: #757575;
@@ -90,15 +91,24 @@
   }
 
   @media screen and (min-width: $desktop) {
-    .icon-envelope {
-      width: 16px;
-      height: 12px;
-    }
-
-    .icon-smartphone {
-      width: 10px;
-      height: 16px;
-    }
     margin-right: 10px;
+  }
+}
+
+.icon-envelope {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: $desktop) {
+    height: 16px;
   }
 }

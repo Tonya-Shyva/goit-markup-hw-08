@@ -394,12 +394,25 @@ h3 {
   .connection-list__icon {
     margin-right: 10px;
   }
-  .connection-list__icon .icon-envelope {
+}
+
+.icon-envelope {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .icon-envelope {
     width: 16px;
     height: 12px;
   }
-  .connection-list__icon .icon-smartphone {
-    width: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .icon-smartphone {
     height: 16px;
   }
 }
