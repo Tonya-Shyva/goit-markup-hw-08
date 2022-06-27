@@ -5,6 +5,10 @@ body {
   color: $primary-text-color;
   background-color: $primary-background-color;
 
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+  }
+
   // &.modal-open {
   //   overflow: hidden;
   // }
