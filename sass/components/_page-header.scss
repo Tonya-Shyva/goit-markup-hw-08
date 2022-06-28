@@ -88,12 +88,13 @@
 
       overflow-y: scroll;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
       flex-grow: 2;
 
       background-color: $primary-background-color;
 
       padding: 48px 40px;
+
       & body {
         overflow-y: hidden;
       }

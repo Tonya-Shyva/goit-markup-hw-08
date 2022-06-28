@@ -14,9 +14,10 @@
 
     flex-direction: column;
     flex-grow: 2;
-    // &__item:not(:last-child) {
-    //   margin-bottom: 32px;
-    // }
+
+    &__item:last-child {
+      margin-bottom: 32px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
