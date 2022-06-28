@@ -12,6 +12,9 @@ body {
     overflow-x: hidden;
   }
 }
+body.modal-open {
+  overflow-y: hidden;
+}
 
 a {
   text-decoration: none;
@@ -167,6 +170,9 @@ h3 {
 }
 
 .mobile-menu-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -175,13 +181,13 @@ h3 {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    z-index: 900;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 796px;
-    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -189,15 +195,24 @@ h3 {
     opacity: 1;
     visibility: visible;
     pointer-events: fill;
-    display: block;
+    z-index: 900;
+    overflow-y: scroll;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    background-color: #ffffff;
     padding: 48px 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-thumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -245,14 +260,14 @@ h3 {
 }
 @media screen and (max-width: 767px) {
   .site-nav-list {
-    min-height: 208px;
+    max-height: 208px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
+  }
+  .site-nav-list__item:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -306,7 +321,7 @@ h3 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: 302px;
+    margin-top: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

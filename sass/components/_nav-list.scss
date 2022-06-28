@@ -9,10 +9,13 @@
   line-height: 1.18;
 
   @media screen and (max-width: 767px) {
-    min-height: 208px;
+    max-height: 208px;
 
     flex-direction: column;
-    flex-grow: 2;
+    // flex-grow: 2;
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
