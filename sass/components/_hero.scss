@@ -1,13 +1,13 @@
 .hero {
   background-color: #c4c4c4;
+  // text-align: center;
 }
 
 .hero__overlay {
-  width: 480px;
-  height: 400px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-img/hero-mobile.jpg');
@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-img/hero-tablet.jpg');
     background-size: 768px 400px;
@@ -35,8 +35,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -54,6 +54,7 @@
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
+  text-align: center;
 
   @media screen and (min-width: 1200px) {
     height: 600px;

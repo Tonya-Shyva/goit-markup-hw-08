@@ -196,7 +196,6 @@ h3 {
     visibility: visible;
     pointer-events: fill;
     z-index: 900;
-    overflow-y: scroll;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -475,11 +474,10 @@ h3 {
 }
 
 .hero__overlay {
-  width: 480px;
-  height: 400px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img/hero-mobile.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-mobile.jpg");
   background-size: 480px 400px;
@@ -496,7 +494,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img/hero-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-tablet.jpg");
     background-size: 768px 400px;
@@ -510,8 +508,8 @@ h3 {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img/hero-desktop.jpg");
@@ -530,6 +528,7 @@ h3 {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
@@ -914,7 +913,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   margin: 15px;
   border: 1px solid #afb1b8;
@@ -931,6 +930,16 @@ h3 {
 }
 .customer-list__customer-item:hover, .customer-list__customer-item:focus {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .customer-list__customer-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-list__customer-item {
+    width: 170px;
+  }
 }
 
 .customer-link {
@@ -1173,7 +1182,7 @@ h3 {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .backdrop {
     padding: 93px 15px 94px 15px;
     overflow-y: scroll;
@@ -1200,7 +1209,7 @@ h3 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -1211,7 +1220,7 @@ h3 {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
   }
 }
