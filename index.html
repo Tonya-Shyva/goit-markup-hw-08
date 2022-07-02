@@ -172,7 +172,7 @@
                       ./images/work-boxes/work-box-first.webp   1x,
                       ./images/work-boxes/work-box-first2x.webp 2x
                     "
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    width="370px"
                     type="image/webp"
                   />
 
@@ -183,8 +183,8 @@
                     "
                     class="example-thumb__img"
                     src="./images/work-boxes/work-box-first.jpg"
-                    alt="Разработка"
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    width="370px"
+                    alt="Десктопные приложения"
                   />
                 </picture>
                 <div class="example-thumb__description">
@@ -200,7 +200,7 @@
                       ./images/work-boxes/work-box-second.webp   1x,
                       ./images/work-boxes/work-box-second2x.webp 2x
                     "
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    width="370px"
                     type="image/webp"
                   />
 
@@ -211,8 +211,8 @@
                     "
                     class="example-thumb__img"
                     src="./images/work-boxes/work-box-second.jpg"
-                    alt="Разработка"
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    alt="Мобильные приложения"
+                    width="370px"
                   />
                 </picture>
                 <div class="example-thumb__description">
@@ -228,7 +228,7 @@
                       ./images/work-boxes/work-box-third.webp   1x,
                       ./images/work-boxes/work-box-third2x.webp 2x
                     "
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    width="370px"
                     type="image/webp"
                   />
 
@@ -239,8 +239,8 @@
                     "
                     class="example-thumb__img"
                     src="./images/work-boxes/work-box-third.jpg"
-                    alt="Разработка"
-                    sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 33vw, 100vw"
+                    alt="Дизайнерские решения"
+                    width="370px"
                   />
                 </picture>
                 <div class="example-thumb__description">
@@ -258,7 +258,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="member-card">
-              <picture>
+              <picture class="member-card__photo">
                 <source
                   srcset="
                     ./images/members/member-Ihor-desktop.webp   270w,
@@ -268,10 +268,10 @@
                     ./images/members/member-Ihor-tablet2x.webp  708w,
                     ./images/members/member-Ihor-mobile2x.webp  900w
                   "
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/webp"
                 />
-                <img
+                <source
                   srcset="
                     ./images/members/member-Ihor-desktop.jpg   270w,
                     ./images/members/member-Ihor-tablet.jpg    354w,
@@ -280,11 +280,11 @@
                     ./images/members/member-Ihor-tablet2x.jpg  708w,
                     ./images/members/member-Ihor-mobile2x.jpg  900w
                   "
-                  class="member"
-                  src="./images/members/member-Ihor-desktop.jpg"
-                  alt="Фото Игоря Демьяненко"
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  type="image/jpg"
                 />
+
+                <img src="./images/members/member-Ihor-desktop.jpg" alt="Фото Игоря Демьяненко" />
               </picture>
               <h3 class="member-card__name">Игорь Демьяненко</h3>
               <p class="member-card__position" lang="en">Product Designer</p>
@@ -344,7 +344,7 @@
               </ul>
             </li>
             <li class="member-card">
-              <picture>
+              <picture class="member-card__photo">
                 <source
                   srcset="
                     ./images/members/member-Olha-desktop.webp   270w,
@@ -354,10 +354,10 @@
                     ./images/members/member-Olha-tablet2x.webp  708w,
                     ./images/members/member-Olha-mobile2x.webp  900w
                   "
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/webp"
                 />
-                <img
+                <source
                   srcset="
                     ./images/members/member-Olha-desktop.jpg   270w,
                     ./images/members/member-Olha-tablet.jpg    354w,
@@ -366,11 +366,10 @@
                     ./images/members/member-Olha-tablet2x.jpg  708w,
                     ./images/members/member-Olha-mobile2x.jpg  900w
                   "
-                  class="member"
-                  src="./images/members/member-Olha-desktop.jpg"
-                  alt="Фото Ольги Репиной"
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  type="image/jpg"
                 />
+                <img src="./images/members/member-Olha-desktop.jpg" alt="Фото Ольги Репиной" />
               </picture>
 
               <h3 class="member-card__name">Ольга Репина</h3>
@@ -431,7 +430,7 @@
               </ul>
             </li>
             <li class="member-card">
-              <picture>
+              <picture class="member-card__photo">
                 <source
                   srcset="
                     ./images/members/member-Nik-desktop.webp   270w,
@@ -441,22 +440,25 @@
                     ./images/members/member-Nik-tablet2x.webp  708w,
                     ./images/members/member-Nik-mobile2x.webp  900w
                   "
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/webp"
                 />
-                <img
+                <source
                   srcset="
                     ./images/members/member-Nik-desktop.jpg   270w,
-                    ./images/members/member-Nik-tablet.jpg    354w,
-                    ./images/members/member-Nik-mobile.jpg    450w,
-                    ./images/members/member-Nik-desktop2x.jpg 540w,
-                    ./images/members/member-Nik-tablet2x.jpg  708w,
+                    ./images/members/member-Nik-desktop2x.jpg 354w,
+                    ./images/members/member-Nik-tablet.jpg    450w,
+                    ./images/members/member-Nik-tablet2x.jpg  540w,
+                    ./images/members/member-Nik-mobile.jpg    708w,
                     ./images/members/member-Nik-mobile2x.jpg  900w
                   "
-                  class="member"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  type="image/jpg"
+                />
+                <img
                   src="./images/members/member-Nik-desktop.jpg"
                   alt="Фото Николая Тарасова"
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 />
               </picture>
               <h3 class="member-card__name">Николай Тарасов</h3>
@@ -517,7 +519,7 @@
               </ul>
             </li>
             <li class="member-card">
-              <picture>
+              <picture class="member-card__photo">
                 <source
                   srcset="
                     ./images/members/member-Mike-desktop.webp   270w,
@@ -527,10 +529,10 @@
                     ./images/members/member-Mike-tablet2x.webp  708w,
                     ./images/members/member-Mike-mobile2x.webp  900w
                   "
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/webp"
                 />
-                <img
+                <source
                   srcset="
                     ./images/members/member-Mike-desktop.jpg   270w,
                     ./images/members/member-Mike-tablet.jpg    354w,
@@ -539,11 +541,10 @@
                     ./images/members/member-Mike-tablet2x.jpg  708w,
                     ./images/members/member-Mike-mobile2x.jpg  900w
                   "
-                  class="member"
-                  src="./images/members/member-Mike-desktop.jpg"
-                  alt="Фото Михаила Ермакова"
-                  sizes="(min-width: 1400px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  type="image/jpg"
                 />
+                <img src="./images/members/member-Mike-desktop.jpg" alt="Фото Михаила Ермакова" />
               </picture>
               <h3 class="member-card__name">Михаил Ермаков</h3>
               <p class="member-card__position" lang="en">UI Designer</p>
