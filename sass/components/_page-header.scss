@@ -73,31 +73,32 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
+
+    overflow: auto;
 
     transition: opacity $transition-settings, visibility $transition-settings;
 
     &.is-open {
+      position: fixed;
       opacity: 1;
       visibility: visible;
       pointer-events: fill;
+      width: 100%;
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
       z-index: 900;
 
-      // overflow-y: scroll;
       flex-direction: column;
-      // justify-content: space-between;
-      flex-grow: 2;
+      // flex-grow: 2;
 
       background-color: $primary-background-color;
 
       padding: 48px 40px;
 
-      & body {
-        overflow-y: hidden;
-      }
+      // & body {
+      //   overflow-y: hidden;
+      // }
     }
   }
 

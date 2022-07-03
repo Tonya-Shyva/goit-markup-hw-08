@@ -16,7 +16,7 @@
 }
 
 .projects-list__item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 
   &:last-child {
@@ -49,15 +49,16 @@
 .project-thumb {
   position: relative;
   overflow: hidden;
-  width: inherit;
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 370px;
-  // }
+  width: 100%;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .project-thumb__image {
-  height: 294px;
+  // height: 294px;
   margin: 0;
   display: block;
 }
@@ -105,8 +106,9 @@
 }
 
 .project-card__description {
-  width: 450px;
-  height: 110px;
+  // width: 450px;
+  // height: 110px;
+  flex-grow: 1;
   padding: 20px 24px;
 
   text-align: left;
@@ -120,22 +122,6 @@
   .project-card:focus & {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-
-    &--tablet {
-      height: 146px;
-    }
-    // height: 146px; - зробити для перших двох
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 370px;
-    &--tablet {
-      height: 110px;
-    }
   }
 }
 
