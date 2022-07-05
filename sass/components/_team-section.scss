@@ -44,17 +44,6 @@
   }
 }
 
-.member-card__photo {
-  max-width: 450px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-  }
-}
-
 .member-card__name,
 .member-card__position {
   font-size: 16px;

@@ -50,20 +50,21 @@
 }
 
 .hero__container {
-  height: 400px;
+  max-width: 390px;
+  // max-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    max-width: 696px;
+    // max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
 .hero__title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -76,7 +77,6 @@
   text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
-    width: 696px;
     font-size: 44px;
   }
 }
