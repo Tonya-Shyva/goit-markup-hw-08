@@ -17,8 +17,8 @@
 
 .customer-list__item {
   display: flex;
-  max-width: 210px;
-  max-height: 92px;
+  min-width: 210px;
+  min-height: 92px;
   margin: 15px;
 
   border: 1px solid #afb1b8;
@@ -35,11 +35,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 226px;
+    min-width: 226px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 170px;
+    min-width: 170px;
   }
 }
 
