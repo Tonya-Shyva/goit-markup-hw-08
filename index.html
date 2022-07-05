@@ -259,7 +259,7 @@
           <ul class="team-list">
             <li class="member-card">
               <picture class="member-card__photo">
-                <source
+                <!-- <source
                   srcset="
                     ./images/members/member-Ihor-desktop.webp   270w,
                     ./images/members/member-Ihor-tablet.webp    354w,
@@ -282,31 +282,55 @@
                   "
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/jpg"
-                />
-                <!-- <source
-                  srcset="
-                    ./images/members/member-Ihor-desktop.webp   1x,
-                    ./images/members/member-Ihor-desktop2x.webp 2x
-                  "
-                  width="270px"
-                  type="image/webp"
-                />
+                /> -->
                 <source
-                  srcset="
-                    ./images/members/member-Ihor-tablet.webp   1x,
-                    ./images/members/member-Ihor-tablet2x.webp 2x
-                  "
-                  width="354px"
-                  type="image/webp"
-                />
-                <source
+                  media="screen and (max-width: 767px)"
                   srcset="
                     ./images/members/member-Ihor-mobile.webp   1x,
                     ./images/members/member-Ihor-mobile2x.webp 2x
                   "
-                  width="450px"
                   type="image/webp"
-                /> -->
+                />
+                <source
+                  media="screen and (min-width: 768px)"
+                  srcset="
+                    ./images/members/member-Ihor-tablet.webp   1x,
+                    ./images/members/member-Ihor-tablet2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    ./images/members/member-Ihor-desktop.webp   1x,
+                    ./images/members/member-Ihor-desktop2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    ./images/members/member-Ihor-mobile.jpg   1x,
+                    ./images/members/member-Ihor-mobile2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="screen and (min-width: 768px)"
+                  srcset="
+                    ./images/members/member-Ihor-tablet.jpg   1x,
+                    ./images/members/member-Ihor-tablet2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    ./images/members/member-Ihor-desktop.jpg   1x,
+                    ./images/members/member-Ihor-desktop2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
                 <img src="./images/members/member-Ihor-desktop.jpg" alt="Фото Игоря Демьяненко" />
               </picture>
               <h3 class="member-card__name">Игорь Демьяненко</h3>
@@ -368,7 +392,7 @@
             </li>
             <li class="member-card">
               <picture class="member-card__photo">
-                <source
+                <!-- <source
                   srcset="
                     ./images/members/member-Olha-desktop.webp   270w,
                     ./images/members/member-Olha-tablet.webp    354w,
@@ -391,7 +415,7 @@
                   "
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/jpg"
-                />
+                /> -->
                 <img src="./images/members/member-Olha-desktop.jpg" alt="Фото Ольги Репиной" />
               </picture>
 
@@ -454,7 +478,7 @@
             </li>
             <li class="member-card">
               <picture class="member-card__photo">
-                <source
+                <!-- <source
                   srcset="
                     ./images/members/member-Nik-desktop.webp   270w,
                     ./images/members/member-Nik-tablet.webp    354w,
@@ -477,7 +501,7 @@
                   "
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/jpg"
-                />
+                /> -->
                 <img
                   src="./images/members/member-Nik-desktop.jpg"
                   alt="Фото Николая Тарасова"
@@ -543,7 +567,7 @@
             </li>
             <li class="member-card">
               <picture class="member-card__photo">
-                <source
+                <!-- <source
                   srcset="
                     ./images/members/member-Mike-desktop.webp   270w,
                     ./images/members/member-Mike-tablet.webp    354w,
@@ -566,7 +590,7 @@
                   "
                   sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                   type="image/jpg"
-                />
+                /> -->
                 <img src="./images/members/member-Mike-desktop.jpg" alt="Фото Михаила Ермакова" />
               </picture>
               <h3 class="member-card__name">Михаил Ермаков</h3>
@@ -630,49 +654,49 @@
         </div>
       </section>
 
-      <!-- Постоянные клиенты -->
+      <!-- Постоянные клиенты --------------->
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="customer-list">
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer1"></use>
                 </svg>
               </a>
             </li>
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer2"></use>
                 </svg>
               </a>
             </li>
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer3"></use>
                 </svg>
               </a>
             </li>
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer4"></use>
                 </svg>
               </a>
             </li>
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer5"></use>
                 </svg>
               </a>
             </li>
             <li tabindex="0" class="customer-list__customer-item">
               <a tabindex="1" class="customer-link link" href="">
-                <svg class="link__icon--grey">
+                <svg class="customer-link__icon link__icon--grey">
                   <use href="./images/icons.svg#icon-customer6"></use>
                 </svg>
               </a>

@@ -54,6 +54,10 @@
   border: none;
 }
 
+.customer-link__icon {
+  height: 60px;
+}
+
 .customer-list__customer-item:hover .link__icon--grey,
 .customer-list__customer-item:focus .link__icon--grey {
   fill: $accent-color;
