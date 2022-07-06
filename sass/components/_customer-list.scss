@@ -1,25 +1,15 @@
 .customer-list {
   @extend %list;
+  @include gap-list;
 
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
   justify-content: center;
-
-  @media screen and (max-width: 767px) {
-    column-count: 2;
-  }
-
-  @media screen and (max-width: 1199px) {
-    column-count: 3;
-  }
 }
 
 .customer-list__item {
   display: flex;
-  min-width: 210px;
-  min-height: 92px;
-  margin: 15px;
+  width: calc((100% - 30px) / 2);
+  // width: 210px;
+  height: 92px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -35,11 +25,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 226px;
+    width: calc((100% - 2 * 30px) / 3);
+    // width: 226px;
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 170px;
+    width: calc((100% - 5 * 30px) / 6);
+    // width: 170px;
   }
 }
 
