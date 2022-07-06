@@ -604,44 +604,26 @@ h3 {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .feature-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-    margin: -15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
+.feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .feature-list__item {
   width: 100%;
 }
-.feature-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .feature-list__item {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-  }
-  .feature-list__item:not(:last-child) {
-    margin-bottom: 15px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .feature-list__item {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -747,24 +729,13 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) {
-  .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-    margin: -15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .member-card {
@@ -776,20 +747,14 @@ h3 {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-@media screen and (max-width: 767px) {
-  .member-card:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .member-card {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .member-card {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
     padding-bottom: 30px;
   }
 }
