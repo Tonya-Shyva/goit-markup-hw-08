@@ -1157,7 +1157,6 @@ h3 {
 }
 
 .modal {
-  min-width: 450px;
   min-height: 609px;
   position: relative;
   background-color: rgb(255, 255, 255);
@@ -1183,6 +1182,7 @@ h3 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
