@@ -6,9 +6,7 @@
 
 .feature-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include gap-list;
 }
 
 .feature-list__item {
