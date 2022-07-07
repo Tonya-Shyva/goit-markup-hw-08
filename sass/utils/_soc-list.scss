@@ -58,9 +58,4 @@
   .soc-link:focus & {
     fill: #ffffff;
   }
-
-  .list__customer-item:hover &,
-  .list__customer-item:focus & {
-    fill: $accent-color;
-  }
 }
