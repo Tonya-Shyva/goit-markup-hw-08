@@ -20,10 +20,10 @@
   opacity: 1;
   transition: opacity $transition-settings;
 
-  // @media screen and (max-width: 480px) {
-  //   // padding: 93px 15px 94px 15px;
-  //   // overflow-y: scroll;
-  // }
+  @media screen and (max-width: 480px) {
+    padding: 93px 15px 94px 15px;
+    // overflow-y: scroll;
+  }
 }
 
 .modal {
@@ -38,9 +38,6 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: transform $transition-settings, opacity $transition-settings;
-  }
-  @media screen and (max-width: 480px) {
-    margin: auto;
   }
 
   @media screen and (min-width: 481px) {
