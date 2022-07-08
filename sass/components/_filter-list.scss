@@ -1,39 +1,29 @@
+.portfolio-container {
+  justify-content: center;
+  align-items: center;
+}
 .filter-list {
   @extend %list;
 
   display: flex;
-  flex-wrap: wrap;
-
-  justify-content: left;
+  column-gap: 8px;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    justify-content: left;
+    margin-bottom: 40px;
+  }
 
   @media screen and (min-width: 768px) {
-    min-width: 611px;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-  }
-}
-
-.filter-list__item {
-  margin-bottom: 15px;
-
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0px;
   }
 }
 
