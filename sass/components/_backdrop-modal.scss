@@ -27,18 +27,13 @@
 }
 
 .modal {
-  min-height: 609px;
+  max-height: 609px;
   position: relative;
+  overflow: scroll;
   background-color: rgba(255, 255, 255, 1);
 
   opacity: 1;
   transition: transform $transition-settings, opacity $transition-settings;
-
-  .is-hidden & {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-    transition: transform $transition-settings, opacity $transition-settings;
-  }
 
   @media screen and (min-width: 481px) {
     position: absolute;
@@ -50,7 +45,13 @@
 
   @media screen and (min-width: 1200px) {
     min-width: 528px;
-    min-height: 581px;
+    max-height: 581px;
+  }
+
+  .is-hidden & {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform $transition-settings, opacity $transition-settings;
   }
 }
 
