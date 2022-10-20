@@ -100,7 +100,12 @@
           <h1 class="visually-hidden">Наши работы</h1>
           <ul class="filter-list">
             <li class="filter-list__item">
-              <button class="btn-all filter-list__button" type="button" style="min-width: 73px">
+              <button
+                class="btn-all filter-list__button"
+                type="button"
+                style="min-width: 73px"
+                data-filter="all"
+              >
                 Все
               </button>
             </li>
@@ -109,17 +114,28 @@
                 class="btn-websites filter-list__button"
                 type="button"
                 style="min-width: 128px"
+                data-filter="web"
               >
                 Веб-сайты
               </button>
             </li>
             <li class="filter-list__item">
-              <button class="btn-apps filter-list__button" type="button" style="min-width: 145px">
+              <button
+                class="btn-apps filter-list__button"
+                type="button"
+                style="min-width: 145px"
+                data-filter="app"
+              >
                 Приложения
               </button>
             </li>
             <li class="filter-list__item">
-              <button class="btn-design filter-list__button" type="button" style="min-width: 103px">
+              <button
+                class="btn-design filter-list__button"
+                type="button"
+                style="min-width: 103px"
+                data-filter="design"
+              >
                 Дизайн
               </button>
             </li>
@@ -128,6 +144,7 @@
                 class="btn-marketing filter-list__button"
                 type="button"
                 style="min-width: 130px"
+                data-filter="marketing"
               >
                 Маркетинг
               </button>
@@ -135,7 +152,7 @@
           </ul>
 
           <ul class="projects-list">
-            <li class="projects-list__item">
+            <li class="projects-list__item web">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -230,7 +247,7 @@
               </a>
             </li>
 
-            <li class="projects-list__item second">
+            <li class="projects-list__item second design" data-category="design">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -323,7 +340,7 @@
               </a>
             </li>
 
-            <li class="projects-list__item third">
+            <li class="projects-list__item third app">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -417,7 +434,7 @@
               </a>
             </li>
 
-            <li class="projects-list__item fourth">
+            <li class="projects-list__item fourth marketing">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -511,7 +528,7 @@
               </a>
             </li>
 
-            <li class="projects-list__item fifth">
+            <li class="projects-list__item fifth app">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -605,7 +622,7 @@
               </a>
             </li>
 
-            <li class="projects-list__item sixth">
+            <li class="projects-list__item sixth web">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -698,7 +715,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item seventh">
+            <li class="projects-list__item seventh design">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -794,7 +811,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item eigth">
+            <li class="projects-list__item eigth marketing">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -887,7 +904,7 @@
                 </div>
               </a>
             </li>
-            <li class="projects-list__item ninth">
+            <li class="projects-list__item ninth app">
               <a href="" class="project-card">
                 <div class="project-thumb">
                   <picture>
@@ -1083,5 +1100,6 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/portfolio-sort.js"></script>
   </body>
 </html>

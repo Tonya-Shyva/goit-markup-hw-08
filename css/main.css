@@ -1,5 +1,4 @@
-/* No CSS */
-/*# sourceMappingURL=vars.css.map */
+/* No CSS */ /*# sourceMappingURL=vars.css.map */
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1139,7 +1138,7 @@ h3 {
 }
 
 .modal {
-  max-height: 609px;
+  min-height: 609px;
   position: relative;
   overflow: scroll;
   background-color: rgb(255, 255, 255);
